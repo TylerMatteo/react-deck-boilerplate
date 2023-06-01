@@ -6,6 +6,10 @@
 }
 
 .card {
+  position: absolute;
+  top: 100px;
+  left: 100px;
   padding: 2em;
+  z-index: 100;
+  background-color: #ffffff;
 }
-
