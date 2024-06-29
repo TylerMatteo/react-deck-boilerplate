@@ -18,6 +18,14 @@ function App() {
         new ZoomWidget({
           id: "zoom",
           placement: "bottom-left",
+          // Note the below styles will not be applied.
+          // Changing to dash cased string key ("border-color": "red")
+          // fixes the issue but then typescript complains
+          style: {
+            borderColor: "red",
+            borderStyle: "solid",
+            borderWidth: "3px",
+          },
         }),
         new CompassWidget({ id: "compass", placement: "bottom-left" }),
       ]}
